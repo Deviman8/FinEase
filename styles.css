@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background: #24252a; 
+}
+
+li, button{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+a{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 30px 10%;
+}
+
+.logo{
+    cursor: pointer;
+    margin-right: auto;
+}
+
+.nav__links{
+    list-style: none;
+}
+
+.nav__links li{
+    display: inline-block;
+    padding: 0px 0px;
+}
+
+.nav__links li a{
+    transition: all 0.3s ease 0;
+    margin-right: 30px;
+}
+
+.nav__links li a:hover{
+    color: #aad576
+}
+
+.nav__buttons{
+    list-style: none;
+}
+
+.nav__buttons li{
+    display: inline-block;
+    
+}
+
+.nav__buttons li a{
+    transition: all 0.3s ease 0;
+    margin: 3px;
+}
+
+button {
+    padding: 9px 25px; 
+    background-color: rgb(115, 169, 66, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0;
+    margin-left: 0px;
+}
+
+button:hover{
+    padding: 9px 25px; 
+    background-color: rgb(115, 169, 66, 0.75);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 1s ease 0;
+}
+
+.intro {
+    display: flex;
+    padding: 0px 10%;
+
+}
+
+  
+.intro h1{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: rgb(115, 169, 66, 1);
+}
+
+.intro h2{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 300;
+}
+
+.intro p{
+    font-family: "Montserrat", sans-serif;
+    font-weight: 400;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates 5 equal-width columns */
+    grid-gap: 3%; /* Adds spacing between the grid items */
+    justify-content: center; /* Centers the grid horizontally */
+    align-items: center; /* Centers the grid vertically */
+    width: 78%; /* Adjust the width as needed */
+    height: 140px; /* Adjust the height as needed */
+    margin: 0 auto; /* Centers the grid container horizontally */
+}
+  
+.grid-item {
+    background-color:white;/* Adjust the background color as needed */
+    height: 111px; /* Adjust the height as needed */
+    outline: 3px solid rgb(115, 169, 66, 1);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-radius: 5px;
+    transition: all 0.2s ease;
+}
+
+.grid-item:hover {
+    transform: scale(1.05); /* Scale the grid item on hover */
+    outline: 3px solid darkblue; /* Change the background color on hover */
+}
