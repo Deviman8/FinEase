@@ -132,11 +132,12 @@ button:hover{
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-    border-radius: 5px;
+    border-radius: 12px;
     transition: all 0.2s ease;
 }
 
 .grid-item:hover {
     transform: scale(1.05); /* Scale the grid item on hover */
     outline: 3px solid darkblue; /* Change the background color on hover */
+    cursor: pointer;
 }
