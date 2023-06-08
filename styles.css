@@ -1,25 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@200;300&display=swap');
+@import url('https://fonts.cdnfonts.com/css/apercu');
 
 *{
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: white; 
 }
 
 li, button{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Apercu', sans-serif;
     font-weight: 500;
     font-size: 16px;
     color: #227C9D;
     text-decoration: none;
+    height: absolute; 
 }
 
 a{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Apercu', sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #227C9D;
+    color: rgb(255, 241, 208);
     text-decoration: none;
 }
 
@@ -29,7 +31,7 @@ header{
     align-items: center;
     padding: 30px 10%;
     margin-bottom: 50px;
-    background-color: white;   
+    background-color: #086788;   
 }
 .logo{
     cursor: pointer;
@@ -48,10 +50,11 @@ header{
 .nav__links li a{
     transition: all 0.3s ease 0;
     margin-right: 30px;
+    color: white;
 }
 
 .nav__links li a:hover{
-    color: #95D8E4;
+    color: rgb(240, 200, 8);
 }
 
 .nav__buttons{
@@ -70,18 +73,19 @@ header{
 
 button {
     padding: 9px 25px; 
-    background-color: rgb(34, 124, 157, 1);
+    background-color: rgb(240, 200, 8);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0;
     margin-left: 0px;
-    color: #edf0f1;
+    color: black;
 }
 
 button:hover{
     padding: 9px 25px; 
-    background-color: rgb(34, 124, 157, 0.8);
+    background-color: rgb(240, 200, 8, 0.9);
+    color: black;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -91,28 +95,45 @@ button:hover{
 .intro {
     display: flex;
     padding: 0px 10%;
+    flex-direction: column;
+    overflow-y: hidden;
+    white-space: nowrap;
+    background-color: transparent;
+    margin-top: 35px; 
 }
 
 .margin{
     margin-left: auto;
     margin-right: auto;
-    width: 90%;
+    width: 82%;
+    
 }
 .intro h1{
-    font-family: "Montserrat", sans-serif;
-    font-size: 3.5  rem;
+    font-family: 'Apercu', sans-serif;
+    font-size: 4rem;
     font-weight: bold;
     margin-bottom: 8px;
-    color: #227C9D;
+    color: rgb(240, 200, 8);    /*background-color: beige;*/
+}
+.intro h1:hover{
+    font-family: 'Apercu', sans-serif;
+    font-size: 4rem;
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: rgb(240, 200, 8);
+    cursor: pointer;
     /*background-color: beige;*/
 }
 
+
 .intro p{
-    font-family: "Montserrat", sans-serif;
+    font-family: 'Apercu', sans-serif;
+    color: #ffffff;
     font-weight: 400;
     font-size: 1.25rem;
-    letter-spacing: -0.08rem;
+    letter-spacing: rem;
 }
+
 
 .grid-container1 {
     display: grid;
@@ -123,13 +144,13 @@ button:hover{
     width: 66%; /* Adjust the width as needed */
     height: 150px; /* Adjust the height as needed */
     margin: 0 auto; /* Centers the grid container horizontally */
-    margin-bottom: 30px;
+    margin-bottom: 80px;
 }
 
 .grid-container2 {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Creates 5 equal-width columns */
-    grid-gap: 50px; /* Adds spacing between the grid items */
+    grid-gap: 30px; /* Adds spacing between the grid items */
     justify-content: center; /* Centers the grid horizontally */
     align-items: center; /* Centers the grid vertically */
     width: 45%; /* Adjust the width as needed */
@@ -138,8 +159,7 @@ button:hover{
 }
   
 .grid-item {
-    background-color:white;/* Adjust the background color as needed */
-    height: 150px; /* Adjust the height as needed */
+    height: 200px; /* Adjust the height as needed */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -150,21 +170,34 @@ button:hover{
     border-radius: 12px;
     transition: transform 0.3s ease;
     border-radius: 0.5em;
-    background: #ffffff;
-    border: #227C9D;
+    background: white;
+    border: rgb(1, 73, 97);
     border-width: 0.15em;
     border-style: solid;
     transition: transform .3s ease;
     padding-bottom: 20px;
+    color: black;
+}
+
+.grid-item a{
+    color: rgb(8, 71, 92); 
+    font-size: 20px;
 }
 
 .grid-item:hover {
     transform: scale(1.025); /* Scale the grid item on hover */
-    outline: 3px solid #227C9D; /* Change the background color on hover */
+    outline: 3px solid rgb(240, 200, 8, 0.1); /* Change the background color on hover */
     box-shadow: 0 5px 15px rgb(255, 255, 255, 1);
     cursor: pointer;
 }
 
-.background-block{
-    background-color:#227C9D;
+.background-block {
+    background-color: #086788; /* Background color of the block */
+    position: absolute;
+    top: 103px; /* Adjust the value based on the height of your header */
+    left: 0;
+    right: 0;
+    height: 55%; /* Set the desired height of the background block */
+    z-index: -1;
+    margin: 0;
 }
