@@ -28,8 +28,9 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
+    background-color: white;
+    margin-bottom: 50px;
 }
-
 .logo{
     cursor: pointer;
     margin-right: auto;
@@ -89,20 +90,30 @@ button:hover{
 .intro {
     display: flex;
     padding: 0px 10%;
-
+    background-color:beige;
 }
 
-  
+.margin{
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+}
 .intro h1{
     font-family: "Montserrat", sans-serif;
-    font-weight: 600;
+    font-size: 4rem;
+    font-weight: bold;
     margin-bottom: 8px;
     color: rgb(115, 169, 66, 1);
+    background-color: beige;
 }
 
 .intro h2{
     font-family: "Montserrat", sans-serif;
     font-weight: 300;
+    margin-right: auto;
+    margin-left: auto;
+    width: 60%;
+    color:aqua;
 }
 
 .intro p{
@@ -110,21 +121,32 @@ button:hover{
     font-weight: 400;
 }
 
-.grid-container {
+.grid-container1 {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Creates 5 equal-width columns */
-    grid-gap: 3%; /* Adds spacing between the grid items */
+    grid-template-columns: repeat(3, 1fr); /* Creates 5 equal-width columns */
+    grid-gap: 30px; /* Adds spacing between the grid items */
     justify-content: center; /* Centers the grid horizontally */
     align-items: center; /* Centers the grid vertically */
-    width: 78%; /* Adjust the width as needed */
+    width: 66%; /* Adjust the width as needed */
+    height: 150px; /* Adjust the height as needed */
+    margin: 0 auto; /* Centers the grid container horizontally */
+    margin-bottom: 30px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Creates 5 equal-width columns */
+    grid-gap: 50px; /* Adds spacing between the grid items */
+    justify-content: center; /* Centers the grid horizontally */
+    align-items: center; /* Centers the grid vertically */
+    width: 45%; /* Adjust the width as needed */
     height: 140px; /* Adjust the height as needed */
     margin: 0 auto; /* Centers the grid container horizontally */
 }
   
 .grid-item {
     background-color:white;/* Adjust the background color as needed */
-    height: 111px; /* Adjust the height as needed */
-    outline: 3px solid rgb(115, 169, 66, 1);
+    height: 150px; /* Adjust the height as needed */
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -133,11 +155,19 @@ button:hover{
     text-overflow: ellipsis;
     white-space: nowrap;
     border-radius: 12px;
-    transition: all 0.2s ease;
+    transition: transform 0.3s ease;
+    border-radius: 0.5em;
+    background: #ffffff;
+    border: #0271e1;
+    border-width: 0.15em;
+    border-style: solid;
+    transition: transform .3s ease;
 }
 
 .grid-item:hover {
-    transform: scale(1.05); /* Scale the grid item on hover */
-    outline: 3px solid darkblue; /* Change the background color on hover */
+    transform: scale(1.025); /* Scale the grid item on hover */
+    outline: 3px solid #0271e1; /* Change the background color on hover */
+    box-shadow: 0 5px 15px rgb(255, 255, 255, 0.2);
     cursor: pointer;
 }
+
