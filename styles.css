@@ -4,14 +4,14 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    background: #24252a; 
+    background: white; 
 }
 
 li, button{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #227C9D;
     text-decoration: none;
 }
 
@@ -19,7 +19,7 @@ a{
     font-family: "Montserrat", sans-serif;
     font-weight: 500;
     font-size: 16px;
-    color: #edf0f1;
+    color: #227C9D;
     text-decoration: none;
 }
 
@@ -28,8 +28,8 @@ header{
     justify-content: flex-end;
     align-items: center;
     padding: 30px 10%;
-    background-color: white;
     margin-bottom: 50px;
+    background-color: white;   
 }
 .logo{
     cursor: pointer;
@@ -51,7 +51,7 @@ header{
 }
 
 .nav__links li a:hover{
-    color: #aad576
+    color: #95D8E4;
 }
 
 .nav__buttons{
@@ -70,17 +70,18 @@ header{
 
 button {
     padding: 9px 25px; 
-    background-color: rgb(115, 169, 66, 1);
+    background-color: rgb(34, 124, 157, 1);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0;
     margin-left: 0px;
+    color: #edf0f1;
 }
 
 button:hover{
     padding: 9px 25px; 
-    background-color: rgb(115, 169, 66, 0.75);
+    background-color: rgb(34, 124, 157, 0.8);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -90,7 +91,6 @@ button:hover{
 .intro {
     display: flex;
     padding: 0px 10%;
-    background-color:beige;
 }
 
 .margin{
@@ -100,25 +100,18 @@ button:hover{
 }
 .intro h1{
     font-family: "Montserrat", sans-serif;
-    font-size: 4rem;
+    font-size: 3.5  rem;
     font-weight: bold;
     margin-bottom: 8px;
-    color: rgb(115, 169, 66, 1);
-    background-color: beige;
-}
-
-.intro h2{
-    font-family: "Montserrat", sans-serif;
-    font-weight: 300;
-    margin-right: auto;
-    margin-left: auto;
-    width: 60%;
-    color:aqua;
+    color: #227C9D;
+    /*background-color: beige;*/
 }
 
 .intro p{
     font-family: "Montserrat", sans-serif;
     font-weight: 400;
+    font-size: 1.25rem;
+    letter-spacing: -0.08rem;
 }
 
 .grid-container1 {
@@ -158,16 +151,20 @@ button:hover{
     transition: transform 0.3s ease;
     border-radius: 0.5em;
     background: #ffffff;
-    border: #0271e1;
+    border: #227C9D;
     border-width: 0.15em;
     border-style: solid;
     transition: transform .3s ease;
+    padding-bottom: 20px;
 }
 
 .grid-item:hover {
     transform: scale(1.025); /* Scale the grid item on hover */
-    outline: 3px solid #0271e1; /* Change the background color on hover */
-    box-shadow: 0 5px 15px rgb(255, 255, 255, 0.2);
+    outline: 3px solid #227C9D; /* Change the background color on hover */
+    box-shadow: 0 5px 15px rgb(255, 255, 255, 1);
     cursor: pointer;
 }
 
+.background-block{
+    background-color:#227C9D;
+}
