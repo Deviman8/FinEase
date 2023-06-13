@@ -36,7 +36,7 @@ body {
 	position: relative;
 	border-radius: 12px;
 	transition: transform .3s ease;
-	display: flex;
+	display: flex;	
 	flex-direction: column;
 	justify-content: space-between;
 	align-items: center;
@@ -55,6 +55,9 @@ body {
 	width: 200px;
 	height: auto;
 	margin-bottom: 10px;
+	position: absolute;
+	bottom: -125px;
+	align-items: center;
 }
 .single-box .price {
 	font-weight: 600;
@@ -62,13 +65,14 @@ body {
 }
 .img {
 	position: absolute;
-	top: -10%;
+	top: -12.5%;
 	left: 25%;
 }
 .single-box h3 {
-	margin-top: 25%;
+	margin-top: 20%;
 	margin-bottom: 15px;
 }
+
 .single-box ul {
     list-style-type: disc; /* Sets the bullet point style to a filled circle */
     margin-bottom: 15px; /* Adjust the margin as desired */
@@ -84,6 +88,25 @@ body {
 	line-height: 135%;
 	font-weight: 400;
 	color: black;
+}
+
+.single-box h2{
+	display:flex;
+	font-size: 1rem;
+	font-weight:400;
+	font-style: italic;
+	justify-content: center;
+	align-items: center;
+	color:black;
+}
+.disclaimer{
+	display:flex;
+	font-size: 1rem;
+	font-weight:400;
+	font-style: italic;
+	justify-content: center;
+	align-items: center;
+	color:black;
 }
 
 

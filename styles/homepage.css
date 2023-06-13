@@ -43,6 +43,7 @@ header{
     padding: 30px 10%;
     margin-bottom: 50px;
     background-color: #4293CB   ;   
+    user-select: none;
 }
 
 .logo{
@@ -117,7 +118,7 @@ button:hover{
 .margin{
     margin-left: auto;
     margin-right: auto;
-    width: 82%;
+    width: 100%;
     
 }
 .intro h1{
@@ -128,10 +129,10 @@ button:hover{
 }
 
 .intro h2{
-    font-family: 'Apercu', sans-serif;
-    font-size: 1.25rem;
-    word-wrap: break-word;
-    color: #346A96;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    font-size: 1.15rem;
+    color: black;
 }
 
 .intro h3{
@@ -157,10 +158,10 @@ button:hover{
     grid-gap: 30px; /* Adds spacing between the grid items */
     justify-content: center; /* Centers the grid horizontally */
     align-items: center; /* Centers the grid vertically */
-    width: 66%; /* Adjust the width as needed */
+    width: 80%; /* Adjust the width as needed */
     height: 150px; /* Adjust the height as needed */
     margin: 0 auto; /* Centers the grid container horizontally */
-    margin-bottom: 80px;
+    margin-bottom: 130px;
 }
 
 .grid-container2 {
@@ -174,7 +175,7 @@ button:hover{
     margin: 0 auto; /* Centers the grid container horizontally */
 }
 .grid-item {
-    height: 200px; /* Adjust the height as needed */
+    height: 250px; /* Adjust the height as needed */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -193,15 +194,16 @@ button:hover{
     transition: transform .3s ease;
     padding-bottom: 20px;
     color: black;
+    user-select: none; 
 }
 
 .grid-item a{
     color: rgb(8, 71, 92); 
-    font-size: 22px;
+    font-size: 25px;
 }
 
 .grid-item:hover {
-    transform: scale(1.025); /* Scale the grid   item on hover */
+    transform: scale(1.15); /* Scale the grid   item on hover */
     outline: 3px solid rgb(240, 200, 8, 0.1); /* Change the background color on hover */
     box-shadow: 0 5px 15px #346A96;
     cursor: pointer;
@@ -222,7 +224,7 @@ button:hover{
     color: rgb(8, 71, 92);
     /*background-color: yellow;*/
     padding-top: 30px;
-    padding-bottom: 2%;
+    padding-bottom: 1%;
 }
 
 .icon-wrapper i {
