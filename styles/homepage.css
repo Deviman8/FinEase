@@ -42,7 +42,8 @@ header{
     align-items: center;
     padding: 30px 10%;
     margin-bottom: 50px;
-    background-color: #4293CB   ;   
+    background-color: #2a2a72;
+    background-image: linear-gradient(315deg, var(--lightblue) 0%, var(--darkblue) 74%);
     user-select: none;
 }
 
@@ -85,19 +86,18 @@ header{
 
 button {
     padding: 9px 25px; 
-    background-color: #FFD932;
+    background-color: var(--yellow);
     border: none;
     border-radius: 50px;
     cursor: pointer;
     transition: all 0.3s ease 0;
     margin-left: 0px;
-    color: black;
+    color: var(--darkblue);
 }
 
 button:hover{
     padding: 9px 25px; 
-    background-color: rgb(240, 200, 8, 0.9);
-    color: black;
+    background-color: var(--yellow);
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -125,7 +125,7 @@ button:hover{
     font-family: 'Apercu', sans-serif;
     font-size: 3.25rem;
     font-weight: bold;
-    color: #DF4C3A;    /*background-color: beige;*/
+    color: var(--darkblue);    /*background-color: beige;*/
 }
 
 .intro h2{
@@ -266,7 +266,8 @@ button:hover{
 
 :root {
     --red: #DF4C3A;
-    --lightblue: #4293CB;
+    --lightblue: #42A5FC;
     --darkblue: #346A96;
+    --yellow: #FFD932;
   }
 
